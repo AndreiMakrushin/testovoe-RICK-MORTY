@@ -11,7 +11,7 @@ export const RickAndMorty = defineStore('storage', () => {
   const currentPage = ref(1)
   const pageLength = ref<number>(1)
 
-  const loadData = (data) => {
+  const loadData = (data: { results: Character[]; info: { pages: number } }) => {
     characters.value = data.results
     pageLength.value = data.info.pages
   }
