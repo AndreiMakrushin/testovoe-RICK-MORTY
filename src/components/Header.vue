@@ -9,7 +9,7 @@ const store = RickAndMorty()
 </script>
 
 <template>
-  <div class="flex flex-row w-full p-[10px] justify-between mb-5">
+  <div class="flex flex-row w-full p-[10px] justify-between mb-5 gap-2">
     <Logo />
     <div class="flex flex-row justify-center items-center gap-2 w-[800px]">
       <Search v-model="store.search" :search="store.search"/>

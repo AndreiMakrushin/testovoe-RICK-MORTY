@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import Card from './components/ui/Card.vue'
+import List from './components/List.vue'
 import Header from './components/Header.vue'
 import Pagination from './components/Pagination.vue'
 
@@ -13,7 +13,7 @@ onMounted(store.fetchCharacters)
 <template>
   <div class="flex flex-col justify-center items-center">
     <Header />
-    <Card :characters="store.characters" />
+    <List :characters="store.characters" />
     <Pagination />
   </div>
 </template>
